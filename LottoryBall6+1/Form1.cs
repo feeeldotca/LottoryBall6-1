@@ -58,8 +58,8 @@ namespace LottoryBall6_1
         private void timerCreateNum_Tick(object sender, EventArgs e)
         {
             timerCreateNum.Interval = 50;
-            this.redBalls = selector.createRandomNumbers(5, selector.RedNumbers);
-            this.blueBalls = selector.createRandomNumbers(0, selector.BlueNumbers);
+            this.redBalls = selector.createRandomNumbers(6, selector.RedNumbers);
+            this.blueBalls = selector.createRandomNumbers(1, selector.BlueNumbers);
             this.lblNum1.Text = this.redBalls[0];
             this.lblNum2.Text = this.redBalls[1];
             this.lblNum3.Text = this.redBalls[2];

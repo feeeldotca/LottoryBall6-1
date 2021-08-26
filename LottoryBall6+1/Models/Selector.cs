@@ -51,7 +51,7 @@ namespace LottoryBall6_1
         {
             List<string> numList = new List<string>();
             while (true) {
-                if (numList.Count > n) break; //if produced enough numbers then exit
+                if (numList.Count >= n) break; //if produced enough numbers then exit
                 string num = pools[random.Next(pools.Count)];
                 if (numList.Contains(num)) continue;
                 numList.Add(num); 
